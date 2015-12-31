@@ -18,19 +18,17 @@
 	
 	#contentContainer
 	{
-		width: 100%;
-		height: 100%;
-		position:absolute;
+		width: 1000px;
+		height: 1000px;
 		z-index: 0;
-		overflow: hidden;
+		margin:0 auto;
 	}
 	
 	#carouselContainer
 	{
 		width: 100%;
 		height: 100%;
-		position:absolute;
-		z-index: 0;
+		margin:0 auto;
 	}
 	
 	.carouselItem,.archer,.hunter,.wizard,.priest,.warrior,.paladin
