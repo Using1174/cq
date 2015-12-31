@@ -158,7 +158,7 @@ function onMouseUp(event) {
     if (!changeType) {
         mouseX += xx;
         mouseY += yy;
-        v = (xx / (new Date() - mdms) * 10);
+        v = (xx/window.innerWidth* 1366 / (new Date() - mdms) * 10);
         if (isNaN(v)) {
             v = 100;
         }
