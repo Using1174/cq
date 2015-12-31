@@ -183,8 +183,18 @@ var mdx = 0,
     v = 0.05;
 var mdms;
 
+var fdis1 = 0,
+    fdis2 = 0;
+
 function onMouseDown(event) {
     if (event.targetTouches) {
+
+        if (event.targetTouches.length > 1) {
+            var finger1 = event.targetTouches[0];
+            var finger2 = event.targetTouches[1];
+            fdis1 = finger1.pageX;
+            fdis2 = finger2.pageX;
+        }
         event = event.targetTouches[0];
     }
     md = true;
@@ -216,6 +226,12 @@ function onMouseUp(event) {
 
 function onMouseMove(event) {
     if (event.targetTouches) {
+        if (event.targetTouches.length > 1) {
+            var finger1 = event.targetTouches[0];
+            var finger2 = event.targetTouches[1];
+            var tdis = finger1.pageX - finger2.pageX;
+            scaleZ += tdis;
+        }
         event = event.targetTouches[0];
     }
     if (!changeType) {
@@ -241,8 +257,9 @@ function onMouseMove(event) {
             //yy = -(-(window.innerHeight * .5) + event.pageY) * .07;
 
         }
+        //scaleZ = -(radius) - (Math.abs(-(window.innerHeight * .5) + event.pageY) - 200);
     }
-    //scaleZ = -(radius) - (Math.abs(-(window.innerHeight * .5) + event.pageY) - 200);
+
 }
 
 function onMouseWheel(event) {
@@ -331,7 +348,6 @@ function looper() {
     })
     fps.text('Framerate: ' + counter.tick() + '/60 FPS')
     debug.html('X: ' + addX.toFixed(5) + '<br />' + 'Y: ' + mouseY.toFixed(5) + '<br />' + 'Z: ' + mouseZ.toFixed(5) + '<br />' + 'V: ' + v.toFixed(5) + '<br />scaleZ:' + scaleZ);
-    // debug.html(debug.html() + )
 }
 
 function getRandomInt($n) {
