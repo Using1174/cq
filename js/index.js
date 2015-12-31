@@ -116,7 +116,10 @@ function init(cla) {
     window.onmouseup = onMouseUp;
     if (window.addEventListener) {
         document.addEventListener('DOMMouseScroll', onMouseWheel, false);
-    }    
+    } 
+    window.ontouchstart=onMouseDown;
+    window.ontouchmove=onMouseMove;
+    window.ontouchend=onMouseUp;   
     ticker = setInterval(looper, 1000 / 60);
     v = 0.075;
 }
