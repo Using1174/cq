@@ -120,6 +120,7 @@ function init(cla) {
     window.ontouchstart=onMouseDown;
     window.ontouchmove=onMouseMove;
     window.ontouchend=onMouseUp;   
+    window.touchcancel=onMouseUp;
     ticker = setInterval(looper, 1000 / 60);
     v = 0.075;
 }
