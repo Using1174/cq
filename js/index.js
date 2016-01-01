@@ -230,7 +230,7 @@ function onMouseMove(event) {
             var finger1 = event.targetTouches[0];
             var finger2 = event.targetTouches[1];
             var tdis = finger1.pageX - finger2.pageX;
-            scaleZ += tdis;
+            //scaleZ += tdis;
         }
         event = event.targetTouches[0];
     }
