@@ -13,7 +13,7 @@
         html, body { height: 100%; }
         body { background-color: #0094ff; background-color: #24465F; background-color: #564535; }
 
-        .container {padding-top: 20px; width: 982px; margin: 0 auto; overflow: hidden; text-align: center; font-size: 0; position: relative; }
+        .container {padding-top: 20px; width: 996px; margin: 0 auto; overflow: hidden; text-align: center; font-size: 0; position: relative; }
         #playerwrap{ display:none;}
         #player {width:300px;height:30px; position:absolute;right:0;}
 
@@ -67,11 +67,14 @@
         .author { font: 14px bold; text-align: right; color: #C98A0A; line-height: 40px; margin-right: 20px; position: absolute; bottom: 0; right: 0; }
 
         #cnzz_stat_icon_1257087580{display: none;}
+        @media(min-width:1656px) {
+            .container { width: 1656px; }
+        }
         @media(min-width:1366px) {
             .container { width: 100%; }
         }
 
-        @media(max-width:982px) {
+        @media(max-width:996px) {
             /*.container { width: 100%; }*/
         }
 
@@ -152,6 +155,7 @@
             </div>
         </div>
         <ul class="avatarlist">
+            <!-- warrior list -->
             <li class="lion"><img class="avatar" onclick="picBig(event);" onclick="picBig(event);" src="http://conn.oss-cn-shenzhen.aliyuncs.com/cq/warrior/光明剑士里昂.png" title="★6 光明剑士里昂" /><img class="tp" src="res/warrior.png" /><p class="lv"><img src="res/sixstars.png" /></p><p class="name">光明剑士里昂</p></li>
             <li><img class="avatar" onclick="picBig(event);" onclick="picBig(event);" src="http://conn.oss-cn-shenzhen.aliyuncs.com/cq/warrior/必胜的罗什福尔.png" title="★6 必胜的罗什福尔" /><img class="tp" src="res/warrior.png" /><p class="lv"><img src="res/sixstars.png" /></p><p class="name">必胜的罗什福尔</p></li>
             <li><img class="avatar" onclick="picBig(event);" src="http://conn.oss-cn-shenzhen.aliyuncs.com/cq/warrior/钢铁骑士圣女贞德.png" title="★6 钢铁骑士圣女贞德" /><img class="tp" src="res/warrior.png" /><p class="lv"><img src="res/sixstars.png" /></p><p class="name">钢铁骑士圣女贞德</p></li>
@@ -168,6 +172,7 @@
             <li><img class="avatar" onclick="picBig(event);" src="http://conn.oss-cn-shenzhen.aliyuncs.com/cq/warrior/黑骑士莱昂内尔.png" title="★6 黑骑士莱昂内尔" /><img class="tp" src="res/warrior.png" /><p class="lv"><img src="res/sixstars.png" /></p><p class="name">黑骑士莱昂内尔</p></li>
             <li><img class="avatar" onclick="picBig(event);" src="http://conn.oss-cn-shenzhen.aliyuncs.com/cq/warrior/森林魔女娅莉塔.png" title="★6 森林魔女娅莉塔" /><img class="tp" src="res/warrior.png" /><p class="lv"><img src="res/sixstars.png" /></p><p class="name">森林魔女娅莉塔</p></li>
 
+            <!-- paladin list -->
             <li><img class="avatar" onclick="picBig(event);" src="http://conn.oss-cn-shenzhen.aliyuncs.com/cq/paladin/约束者克里姆希尔特.png" title="★6 约束者克里姆希尔特" /><img class="tp" src="res/paladin.png" /><p class="lv"><img src="res/sixstars.png" /></p><p class="name">约束者克里姆希尔特</p></li>
             <li><img class="avatar" onclick="picBig(event);" src="http://conn.oss-cn-shenzhen.aliyuncs.com/cq/paladin/最初的帕拉丁罗兰.png" title="★6 最初的帕拉丁罗兰" /><img class="tp" src="res/paladin.png" /><p class="lv"><img src="res/sixstars.png" /></p><p class="name">最初的帕拉丁罗兰</p></li>
             <li><img class="avatar" onclick="picBig(event);" src="http://conn.oss-cn-shenzhen.aliyuncs.com/cq/paladin/雷神托尔.png" title="★6 雷神托尔" /><img class="tp" src="res/paladin.png" /><p class="lv"><img src="res/sixstars.png" /></p><p class="name">雷神托尔</p></li>
@@ -182,7 +187,9 @@
             <li><img class="avatar" onclick="picBig(event);" src="http://conn.oss-cn-shenzhen.aliyuncs.com/cq/paladin/风华绝代织女.png" title="★6 风华绝代织女" /><img class="tp" src="res/paladin.png" /><p class="lv"><img src="res/sixstars.png" /></p><p class="name">风华绝代织女</p></li>
             <li><img class="avatar" onclick="picBig(event);" src="http://conn.oss-cn-shenzhen.aliyuncs.com/cq/paladin/意志坚定的赫克托尔.png" title="★6 意志坚定的赫克托尔" /><img class="tp" src="res/paladin.png" /><p class="lv"><img src="res/sixstars.png" /></p><p class="name">意志坚定的赫克托尔</p></li>
             <li><img class="avatar" onclick="picBig(event);" src="http://conn.oss-cn-shenzhen.aliyuncs.com/cq/paladin/战场上的圣女雅典娜.png" title="★6 战场上的圣女雅典娜" /><img class="tp" src="res/paladin.png" /><p class="lv"><img src="res/sixstars.png" /></p><p class="name">战场上的圣女雅典娜</p></li>
+            <li><img class="avatar" onclick="picBig(event);" src="http://conn.oss-cn-shenzhen.aliyuncs.com/cq/paladin/不败将军秦琼.png" title="★6 不败将军秦琼" /><img class="tp" src="res/paladin.png" /><p class="lv"><img src="res/sixstars.png" /></p><p class="name">不败将军秦琼</p></li>
 
+            <!-- hunter list -->
             <li><img class="avatar" onclick="picBig(event);" src="http://conn.oss-cn-shenzhen.aliyuncs.com/cq/hunter/视死如归达达尼昂.png" title="★6 视死如归达达尼昂" /><img class="tp" src="res/hunter.png" /><p class="lv"><img src="res/sixstars.png" /></p><p class="name">视死如归达达尼昂</p></li>
             <li><img class="avatar" onclick="picBig(event);" src="http://conn.oss-cn-shenzhen.aliyuncs.com/cq/hunter/夜魔女麻美.png" title="★6 夜魔女麻美" /><img class="tp" src="res/hunter.png" /><p class="lv"><img src="res/sixstars.png" /></p><p class="name">夜魔女麻美</p></li>
             <li><img class="avatar" onclick="picBig(event);" src="http://conn.oss-cn-shenzhen.aliyuncs.com/cq/hunter/牛仔梅西.png" title="★6 牛仔梅西" /><img class="tp" src="res/hunter.png" /><p class="lv"><img src="res/sixstars.png" /></p><p class="name">牛仔梅西</p></li>
@@ -199,6 +206,7 @@
             <li><img class="avatar" onclick="picBig(event);" src="http://conn.oss-cn-shenzhen.aliyuncs.com/cq/hunter/名侦探夏洛克.png" title="★6 名侦探夏洛克" /><img class="tp" src="res/hunter.png" /><p class="lv"><img src="res/sixstars.png" /></p><p class="name">名侦探夏洛克</p></li>
             <li><img class="avatar" onclick="picBig(event);" src="http://conn.oss-cn-shenzhen.aliyuncs.com/cq/hunter/电子人斯佩妮.png" title="★6 电子人斯佩妮" /><img class="tp" src="res/hunter.png" /><p class="lv"><img src="res/sixstars.png" /></p><p class="name">电子人斯佩妮</p></li>
 
+            <!-- archer list -->
             <li><img class="avatar" onclick="picBig(event);" src="http://conn.oss-cn-shenzhen.aliyuncs.com/cq/archer/屠魔猎手溪谷莉娜.png" title="★6 屠魔猎手溪谷莉娜" /><img class="tp" src="res/archer.png" /><p class="lv"><img src="res/sixstars.png" /></p><p class="name">屠魔猎手溪谷莉娜</p></li>
             <li><img class="avatar" onclick="picBig(event);" src="http://conn.oss-cn-shenzhen.aliyuncs.com/cq/archer/红莲之弓矢德姆娜.png" title="★6 红莲之弓矢德姆娜" /><img class="tp" src="res/archer.png" /><p class="lv"><img src="res/sixstars.png" /></p><p class="name">红莲之弓矢德姆娜</p></li>
             <li><img class="avatar" onclick="picBig(event);" src="http://conn.oss-cn-shenzhen.aliyuncs.com/cq/archer/驯龙高手·坤.png" title="★6 驯龙高手·坤"  /><img class="tp" src="res/archer.png" /><p class="lv"><img src="res/sixstars.png" /></p><p class="name">驯龙高手·坤</p></li>
@@ -214,7 +222,9 @@
             <li><img class="avatar" onclick="picBig(event);" src="http://conn.oss-cn-shenzhen.aliyuncs.com/cq/archer/月光追击者阿塔兰特.png" title="★6 月光追击者阿塔兰特" /><img class="tp" src="res/archer.png" /><p class="lv"><img src="res/sixstars.png" /></p><p class="name">月光追击者阿塔兰特</p></li>
             <li><img class="avatar" onclick="picBig(event);" src="http://conn.oss-cn-shenzhen.aliyuncs.com/cq/archer/黑曼巴.png" title="★6 黑曼巴" /><img class="tp" src="res/archer.png" /><p class="lv"><img src="res/sixstars.png" /></p><p class="name">黑曼巴</p></li>
             <li><img class="avatar" onclick="picBig(event);" src="http://conn.oss-cn-shenzhen.aliyuncs.com/cq/archer/首席舞蹈家李.png" title="★6 首席舞蹈家李" /><img class="tp" src="res/archer.png" /><p class="lv"><img src="res/sixstars.png" /></p><p class="name">首席舞蹈家李</p></li>
+            <li><img class="avatar" onclick="picBig(event);" src="http://conn.oss-cn-shenzhen.aliyuncs.com/cq/archer/火焰之迎春.png" title="★6 火焰之迎春" /><img class="tp" src="res/archer.png" /><p class="lv"><img src="res/sixstars.png" /></p><p class="name">火焰之迎春</p></li>
 
+            <!-- wizard list -->
             <li><img class="avatar" onclick="picBig(event);" src="http://conn.oss-cn-shenzhen.aliyuncs.com/cq/wizard/黑袍魔女桃乐丝.png" title="★6 黑袍魔女桃乐丝" /><img class="tp" src="res/wizard.png" /><p class="lv"><img src="res/sixstars.png" /></p><p class="name">黑袍魔女桃乐丝</p></li>
             <li><img class="avatar" onclick="picBig(event);" src="http://conn.oss-cn-shenzhen.aliyuncs.com/cq/wizard/魔法少女明日香.png" title="★6 魔法少女明日香" /><img class="tp" src="res/wizard.png" /><p class="lv"><img src="res/sixstars.png" /></p><p class="name">魔法少女明日香</p></li>
             <li><img class="avatar" onclick="picBig(event);" src="http://conn.oss-cn-shenzhen.aliyuncs.com/cq/wizard/觉醒的雅甘.png" title="★6 觉醒的雅甘" /><img class="tp" src="res/wizard.png" /><p class="lv"><img src="res/sixstars.png" /></p><p class="name">觉醒的雅甘</p></li>
@@ -232,6 +242,7 @@
             <li><img class="avatar" onclick="picBig(event);" src="http://conn.oss-cn-shenzhen.aliyuncs.com/cq/wizard/创造者宾森恩.png" title="★6 创造者宾森恩" /><img class="tp" src="res/wizard.png" /><p class="lv"><img src="res/sixstars.png" /></p><p class="name">创造者宾森恩</p></li>
             <li><img class="avatar" onclick="picBig(event);" src="http://conn.oss-cn-shenzhen.aliyuncs.com/cq/wizard/苏醒的贝斯派.png" title="★6 苏醒的贝斯派" /><img class="tp" src="res/wizard.png" /><p class="lv"><img src="res/sixstars.png" /></p><p class="name">苏醒的贝斯派</p></li>
 
+            <!-- priest list -->
             <li><img class="avatar" onclick="picBig(event);" src="http://conn.oss-cn-shenzhen.aliyuncs.com/cq/priest/救世的圣母玛利亚.png" title="★6 救世的圣母玛利亚" /><img class="tp" src="res/priest.png" /><p class="lv"><img src="res/sixstars.png" /></p><p class="name">救世的圣母玛利亚</p></li>
             <li><img class="avatar" onclick="picBig(event);" src="http://conn.oss-cn-shenzhen.aliyuncs.com/cq/priest/暗黑修女梅丽莎.png" title="★6 暗黑修女梅丽莎" /><img class="tp" src="res/priest.png" /><p class="lv"><img src="res/sixstars.png" /></p><p class="name">暗黑修女梅丽莎</p></li>
             <li><img class="avatar" onclick="picBig(event);" src="http://conn.oss-cn-shenzhen.aliyuncs.com/cq/priest/猫咪大师喵.png" title="★6 猫咪大师喵" /><img class="tp" src="res/priest.png" /><p class="lv"><img src="res/sixstars.png" /></p><p class="name">猫咪大师喵</p></li>
