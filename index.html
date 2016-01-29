@@ -64,7 +64,7 @@
 
         .empty a:hover{color:#FF4500;text-decoration:underline;}
 
-        .author { font:bold 14px 'simsum' ; text-align: right; color: #E22424; color: #F00; line-height: 40px; margin-right: 20px; position: absolute; bottom: 0; right: 0; }
+        .author { font:bold 14px 'simsum',serif ; text-align: right; color: #E22424; color: #F00; line-height: 40px; margin-right: 20px; position: absolute; bottom: 0; right: 0; }
         .author table{text-align: center;line-height: normal;font-size: 16px;}
         .author img{vertical-align: middle;height: 80px;}
 
@@ -265,7 +265,7 @@
         <div class="author">
             <table>
                 <tr><td rowspan='2'><img onclick="picBig(event);" src="http://conn.oss-cn-shenzhen.aliyuncs.com/cq/paladin/不败将军秦琼.png" title="★6 不败将军秦琼" />&nbsp;</td><td rowspan='2' ><span style="font-size:20px;">新年快乐!</span><br />Happy NewYear</td><td rowspan='2'><img onclick="picBig(event);" src="http://conn.oss-cn-shenzhen.aliyuncs.com/cq/archer/火焰之迎春.png" title="★6 火焰之迎春" style=" transform:scaleX(-1);filter:FlipH;" /></td><td>&nbsp;</td></tr>
-                <tr><td> By：路人甲</td></tr>
+                <tr><td style="font-size:10px;"> By：路人甲</td></tr>
             </table>           
         </div>
         <div id="divCenter" style="position: fixed; z-index: 9; display: none; background-color: #564535; width:30px; height:30px;left:30%;top:200px; border:5px solid #fff;">
@@ -294,7 +294,7 @@
         window.onclick=mlist.onmouseleave;
         window.onload = function () {
             var divCenter=document.getElementById("divCenter");
-            var h=window.screen.height/2,w=window.screen.width/2;
+            var h=document.body.clientHeight/2,w=document.body.clientWidth/2;
             var min=h;
             if(min>w){
                 min=w;
