@@ -58,22 +58,25 @@
         .lv img { width: 80px;height:11px; }
 
         .avatarlist .lion { display: none; }
-        .empty { height: 40px; line-height: 40px; width: 100%;font-size: 14px;text-align:left;margin-left: 5px; }
+        .empty { height: 80px; line-height: 40px; width: 100%;font-size: 14px;text-align:left;margin-left: 5px; }
 
         .empty a{color:#ffcb39;}
 
         .empty a:hover{color:#FF4500;text-decoration:underline;}
 
-        .author { font:bold 14px 'simsum' ; text-align: right; color: #E28024; line-height: 40px; margin-right: 20px; position: absolute; bottom: 0; right: 0; }
+        .author { font:bold 14px 'simsum' ; text-align: right; color: #E22424; color: #F00; line-height: 40px; margin-right: 20px; position: absolute; bottom: 0; right: 0; }
+        .author table{text-align: center;line-height: normal;font-size: 16px;}
+        .author img{vertical-align: middle;height: 80px;}
 
         #cnzz_stat_icon_1257087580{display: none;}
-        @media(min-width:1656px) {
-            .container { width: 1656px; }
-        }
         @media(min-width:1366px) {
             .container { width: 100%; }
         }
 
+        @media(min-width:1656px) {
+            .container { width: 1656px; }
+        }
+        
         @media(max-width:996px) {
             /*.container { width: 100%; }*/
         }
@@ -260,7 +263,10 @@
         </ul>
         <div class="empty"><a href="cq-3d.html" title="3D效果，暂不支持IE"> 2D还不够？试试3D效果！</a></div>
         <div class="author">
-            By：路人甲
+            <table>
+                <tr><td rowspan='2'><img onclick="picBig(event);" src="http://conn.oss-cn-shenzhen.aliyuncs.com/cq/paladin/不败将军秦琼.png" title="★6 不败将军秦琼" />&nbsp;</td><td rowspan='2' ><span style="font-size:20px;">新年快乐!</span><br />Happy NewYear</td><td rowspan='2'><img onclick="picBig(event);" src="http://conn.oss-cn-shenzhen.aliyuncs.com/cq/archer/火焰之迎春.png" title="★6 火焰之迎春" style=" transform:scaleX(-1);filter:FlipH;" /></td><td>&nbsp;</td></tr>
+                <tr><td> By：路人甲</td></tr>
+            </table>           
         </div>
         <div id="divCenter" style="position: fixed; z-index: 9; display: none; background-color: #564535; width:30px; height:30px;left:30%;top:200px; border:5px solid #fff;">
             <img src="res/close.png" style="position:absolute;right:-7%;top:-7%;width:15%;" onclick="picClose();"/>
@@ -288,7 +294,7 @@
         window.onclick=mlist.onmouseleave;
         window.onload = function () {
             var divCenter=document.getElementById("divCenter");
-            var h=document.body.clientHeight/2,w=document.body.clientWidth/2;
+            var h=window.screen.height/2,w=window.screen.width/2;
             var min=h;
             if(min>w){
                 min=w;
